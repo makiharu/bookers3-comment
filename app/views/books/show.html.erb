@@ -85,7 +85,7 @@
 						<tr>
 						<% @onebook.book_comments.each do |comment| %>
 						<td><%= comment.id %></td>
-						<td><%= comment.content %></td>
+						<td><%= comment.content %></td><!--userの情報を調べる-->
 						<% if @onebook.user_id == current_user.id %>
 						<td><%= link_to 'Destroy',book_comment_path(comment), method: :delete %></td>
 							<% end %>
